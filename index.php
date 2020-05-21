@@ -43,3 +43,5 @@ foreach ($html->find('table[id=main_table_countries_today]') as $table) {
 $fp = fopen('coronavirusStats.json', 'w');
 fwrite($fp, json_encode($finalObject));
 fclose($fp);
+
+echo "Done Generating the json file, check it on the root of this project";
